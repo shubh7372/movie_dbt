@@ -1,0 +1,17 @@
+# Ignore Python environment and caches
+venv/
+__pycache__/
+*.pyc
+
+# Ignore dbt build artifacts
+target/
+dbt_packages/
+logs/
+
+# Ignore local configs and credentials
+.env
+profiles.yml
+
+# Ignore system files
+.DS_Store
+Thumbs.db
