@@ -1,0 +1,9 @@
+WITH GENOME_SCORES AS (
+  SELECT * FROM MOVIE.RAW.GENOME_SCORES
+)
+
+SELECT
+  movieId AS movie_id,
+  tagId AS tag_id,
+  relevance
+FROM GENOME_SCORES

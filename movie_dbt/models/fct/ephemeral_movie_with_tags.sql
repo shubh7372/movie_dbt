@@ -1,0 +1,1 @@
+select * from {{ ref("dim_movie_with_tags") }}
