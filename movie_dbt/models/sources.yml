@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw
+    database: movie  
+    schema: raw  
+    tables:
+      - name: raw_genome_scores
+        identifier: GENOME_SCORES
+
+seeds:
+  - name: seed_movie_release_date
+    columns:
+      - name: movie_id
+        description: "movie id"
+        tests:
+          - not_null
+          - unique

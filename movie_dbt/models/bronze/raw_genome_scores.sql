@@ -1,5 +1,5 @@
 WITH GENOME_SCORES AS (
-  SELECT * FROM MOVIE.RAW.GENOME_SCORES
+  SELECT * FROM {{ source('raw', 'raw_genome_scores') }}
 )
 
 SELECT
