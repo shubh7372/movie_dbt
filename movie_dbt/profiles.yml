@@ -1,0 +1,13 @@
+movie_dbt:
+  outputs:
+    dev:
+      account: AKZLJYN-BV67269
+      database: MOVIE
+      password: Shubhambansal@2
+      role: TRANSFORM
+      schema: DEV
+      threads: 1
+      type: snowflake
+      user: Shubh7372
+      warehouse: COMPUTE_WH
+  target: dev
